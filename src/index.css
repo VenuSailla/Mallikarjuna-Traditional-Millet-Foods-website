@@ -572,6 +572,10 @@ section {
   color: var(--color-golden-yellow);
 }
 
+.badge-icon-location {
+  color: #c93a2b;
+}
+
 .hero-title {
   font-size: 3.4rem;
   line-height: 1.15;

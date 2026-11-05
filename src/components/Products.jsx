@@ -34,16 +34,16 @@ const Products = () => {
               <MessageCircleQuestion size={28} />
             </div>
             <div>
-              <h3>Looking for custom quantities or daily subscriptions?</h3>
-              <p>Contact us on WhatsApp to discuss your family's traditional millet food requirements.</p>
+              <h3>Looking for daily subscriptions in Karimnagar City?</h3>
+              <p>Freshly prepared traditional millet foods available exclusively within Karimnagar city.</p>
             </div>
           </div>
           <WhatsAppButton
-            customMessage="Hello Mallikarjuna Traditional Millet Foods, I would like to enquire about custom daily millet meals and bulk orders."
+            customMessage="Hello Mallikarjuna Traditional Millet Foods, I am located in Karimnagar City and would like to enquire about daily millet meals and orders."
             variant="primary"
             iconSize={20}
           >
-            Chat with Us
+            Order in Karimnagar
           </WhatsAppButton>
         </div>
       </div>

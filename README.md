@@ -6,6 +6,7 @@ A modern, responsive, and static business website for **Mallikarjuna Traditional
 
 ## 🌾 Business Contact Details
 - **Business Name:** Mallikarjuna Traditional Millet Foods
+- **Service Area:** 📍 Exclusively in Karimnagar City
 - **Phone:** +91 9908372515
 - **WhatsApp:** +91 9908372515
 - **Email:** [saillavenu012@gmail.com](mailto:saillavenu012@gmail.com)

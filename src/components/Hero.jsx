@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sparkles, Utensils, Heart, ArrowRight } from 'lucide-react';
+import { Sparkles, Utensils, Heart, ArrowRight, MapPin } from 'lucide-react';
 import WhatsAppButton from './WhatsAppButton';
 import { handleImageError } from '../data/imageFallbacks';
 
@@ -10,9 +10,9 @@ const Hero = () => {
         <div className="hero-grid">
           {/* Left Hero Content */}
           <div className="hero-content">
-            <div className="hero-badge">
-              <Sparkles size={16} className="badge-icon" />
-              <span>Authentic Indian Heritage</span>
+            <div className="hero-badge hero-badge-location">
+              <MapPin size={15} className="badge-icon-location" />
+              <span>Available Only in Karimnagar City</span>
             </div>
 
             <h1 className="hero-title">
@@ -82,12 +82,12 @@ const Hero = () => {
                 onError={(e) => handleImageError(e, 'Traditional Millet Foods')}
               />
               
-              {/* Floating Pill Card 1: Ragi Java & Roti */}
+              {/* Floating Pill Card 1: Karimnagar City Only */}
               <div className="floating-badge badge-top-right">
-                <span className="badge-bullet">🌾</span>
+                <span className="badge-bullet">📍</span>
                 <div>
-                  <strong>Fresh Ragi Java & Rotis</strong>
-                  <small>Prepared with Traditional Care</small>
+                  <strong>Karimnagar City Only</strong>
+                  <small>Fresh Daily Preparation</small>
                 </div>
               </div>
 

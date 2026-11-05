@@ -135,8 +135,8 @@ const ContactForm = () => {
       <div className="contact-form-header">
         <h3 className="contact-form-title">Send Us an Enquiry</h3>
         <p className="contact-form-subtitle">
-          Fill in your details below and we will get back to you with pricing and product
-          information.
+          📍 <strong>Service Location: Karimnagar City Only.</strong> Fill in your details below
+          and we will get back to you with pricing and daily order availability.
         </p>
       </div>
 

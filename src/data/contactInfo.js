@@ -1,11 +1,13 @@
 /**
  * Centralized Contact and Business Information
- * Easily update phone, email, and WhatsApp details here
+ * Easily update phone, email, WhatsApp, and service location details here
  */
 
 export const CONTACT_INFO = {
   businessName: 'Mallikarjuna Traditional Millet Foods',
   tagline: 'Healthy Living Starts with Traditional Millets',
+  serviceLocation: 'Karimnagar City Only',
+  serviceAreaDisplay: 'Exclusively in Karimnagar City',
   phoneDisplay: '+91 9908372515',
   phoneRaw: '+919908372515',
   phoneHref: 'tel:+919908372515',
@@ -14,7 +16,7 @@ export const CONTACT_INFO = {
   email: 'saillavenu012@gmail.com',
   emailHref: 'mailto:saillavenu012@gmail.com',
   defaultMessage:
-    'Hello Mallikarjuna Traditional Millet Foods, I am interested in your products. Please share the details and prices.',
+    'Hello Mallikarjuna Traditional Millet Foods, I am located in Karimnagar City and interested in your products. Please share the details and prices.',
 };
 
 /**
@@ -44,6 +46,6 @@ export const getWhatsAppUrl = (customMessage) => {
  * @returns {string}
  */
 export const getProductWhatsAppUrl = (productName) => {
-  const message = `Hello, I am interested in ${productName}. Please share the price and availability.`;
+  const message = `Hello, I am located in Karimnagar City and interested in ordering ${productName}. Please share the price and availability.`;
   return `https://wa.me/${CONTACT_INFO.whatsappNumber}?text=${encodeURIComponent(message)}`;
 };

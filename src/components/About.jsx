@@ -56,8 +56,8 @@ const About = () => {
               <div className="about-feature">
                 <HeartHandshake className="about-check-icon" size={20} />
                 <div>
-                  <strong>Direct Customer Care</strong>
-                  <p>Every meal is prepared fresh, with direct personal ordering via WhatsApp.</p>
+                  <strong>Local to Karimnagar City</strong>
+                  <p>Prepared fresh daily and available exclusively for customers within Karimnagar city.</p>
                 </div>
               </div>
             </div>

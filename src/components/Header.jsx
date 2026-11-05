@@ -47,7 +47,7 @@ const Header = () => {
       <div className="top-bar">
         <div className="container top-bar-content">
           <span className="top-bar-tagline">
-            🌾 Traditional South Indian Millet Foods • 100% Wholesome & Natural
+            🌾 Traditional South Indian Millet Foods • 📍 Available Only in Karimnagar City
           </span>
           <div className="top-bar-contact">
             <a href={CONTACT_INFO.phoneHref} className="top-bar-link">
@@ -149,7 +149,7 @@ const Header = () => {
             Order on WhatsApp
           </WhatsAppButton>
           <div className="mobile-drawer-contact">
-            <p>Direct Enquiries:</p>
+            <p>📍 Available Only in Karimnagar City</p>
             <a href={CONTACT_INFO.phoneHref} className="mobile-drawer-phone">
               <Phone size={15} /> {CONTACT_INFO.phoneDisplay}
             </a>

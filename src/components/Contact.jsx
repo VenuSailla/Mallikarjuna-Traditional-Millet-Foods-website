@@ -16,8 +16,8 @@ const Contact = () => {
           </div>
           <h2 className="section-title">Get in Touch With Us</h2>
           <p className="section-subtitle">
-            Have questions about our traditional millet foods? Contact us directly. We are happy
-            to help.
+            Serving Karimnagar City with authentic traditional millet foods. Have questions or
+            want to place an order? Contact us directly.
           </p>
         </div>
 
@@ -55,8 +55,8 @@ const Contact = () => {
             <WhatsAppButton
               variant="card-action"
               className="btn-whatsapp-card-action"
-              customMessage="Hello Mallikarjuna Traditional Millet Foods, I have a question about your millet foods."
-              ariaLabel="WhatsApp Us"
+              customMessage="Hello Mallikarjuna Traditional Millet Foods, I am located in Karimnagar City and have a question about your millet foods."
+              ariaLabel="WhatsApp Us in Karimnagar"
               iconSize={18}
             >
               WhatsApp Us
@@ -89,8 +89,9 @@ const Contact = () => {
         <div className="contact-notice">
           <MessageSquare size={18} className="notice-icon" />
           <span>
-            We are readily available on WhatsApp for quick responses on product availability,
-            daily orders, and pricing details.
+            <strong>Service Notice:</strong> Orders and delivery are available{' '}
+            <strong>exclusively within Karimnagar City</strong>. We are readily available on
+            WhatsApp for fast replies and daily orders.
           </span>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Wheat, Phone, Mail, ArrowUp } from 'lucide-react';
+import { Wheat, Phone, Mail, ArrowUp, MapPin } from 'lucide-react';
 import { CONTACT_INFO, getWhatsAppUrl, openWhatsApp } from '../data/contactInfo';
 import { WhatsAppIcon } from './WhatsAppButton';
 
@@ -42,7 +42,7 @@ const Footer = () => {
 
             <p className="footer-desc">
               Dedicated to reviving wholesome Indian culinary traditions with authentic finger
-              millet, sorghum, and pearl millet foods.
+              millet, sorghum, and pearl millet foods. Serving exclusively in Karimnagar City.
             </p>
           </div>
 
@@ -140,6 +140,17 @@ const Footer = () => {
                   </div>
                 </a>
               </li>
+              <li>
+                <div className="footer-contact-item">
+                  <div className="footer-icon-circle">
+                    <MapPin size={16} />
+                  </div>
+                  <div>
+                    <span className="footer-label">Service Area:</span>
+                    <strong>Karimnagar City Only</strong>
+                  </div>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
@@ -154,7 +165,7 @@ const Footer = () => {
             reserved.
           </p>
           <div className="footer-bottom-right">
-            <span className="footer-tagline-small">Natural • Fresh • Authentic</span>
+            <span className="footer-tagline-small">Karimnagar City Only • Natural • Fresh • Authentic</span>
             <button
               type="button"
               onClick={scrollToTop}
