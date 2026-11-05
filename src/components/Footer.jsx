@@ -1,6 +1,6 @@
 import React from 'react';
 import { Wheat, Phone, Mail, ArrowUp } from 'lucide-react';
-import { CONTACT_INFO, getWhatsAppUrl } from '../data/contactInfo';
+import { CONTACT_INFO, getWhatsAppUrl, openWhatsApp } from '../data/contactInfo';
 import { WhatsAppIcon } from './WhatsAppButton';
 
 const NAV_LINKS = [
@@ -111,6 +111,10 @@ const Footer = () => {
               <li>
                 <a
                   href={getWhatsAppUrl()}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    openWhatsApp();
+                  }}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="footer-contact-item"

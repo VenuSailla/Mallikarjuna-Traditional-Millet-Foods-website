@@ -14,7 +14,18 @@ export const CONTACT_INFO = {
   email: 'saillavenu012@gmail.com',
   emailHref: 'mailto:saillavenu012@gmail.com',
   defaultMessage:
-    'Hello Mallikarjuna Traditional Millet Foods, I am interested in your products. Please share the product details and prices.',
+    'Hello Mallikarjuna Traditional Millet Foods, I am interested in your products. Please share the details and prices.',
+};
+
+/**
+ * Open WhatsApp using JavaScript with encoded message
+ * @param {string} message
+ */
+export const openWhatsApp = (message) => {
+  const phone = '919908372515';
+  const resolvedMessage = message || CONTACT_INFO.defaultMessage;
+  const url = `https://wa.me/${phone}?text=${encodeURIComponent(resolvedMessage)}`;
+  window.open(url, '_blank', 'noopener,noreferrer');
 };
 
 /**
@@ -33,7 +44,6 @@ export const getWhatsAppUrl = (customMessage) => {
  * @returns {string}
  */
 export const getProductWhatsAppUrl = (productName) => {
-  const message = `Hello, I am interested in ordering ${productName}. Please share the price and availability.`;
+  const message = `Hello, I am interested in ${productName}. Please share the price and availability.`;
   return `https://wa.me/${CONTACT_INFO.whatsappNumber}?text=${encodeURIComponent(message)}`;
 };
-

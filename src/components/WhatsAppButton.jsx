@@ -2,6 +2,20 @@ import React from 'react';
 import { CONTACT_INFO, getProductWhatsAppUrl, getWhatsAppUrl } from '../data/contactInfo';
 
 /**
+ * Open WhatsApp using JavaScript with encoded message
+ * Compatible with Desktop, Android, and iOS
+ * @param {string} message
+ */
+export const openWhatsApp = (message) => {
+  const phone = '919908372515';
+  const resolvedMessage =
+    message ||
+    'Hello Mallikarjuna Traditional Millet Foods, I am interested in your products. Please share the details and prices.';
+  const url = `https://wa.me/${phone}?text=${encodeURIComponent(resolvedMessage)}`;
+  window.open(url, '_blank', 'noopener,noreferrer');
+};
+
+/**
  * Clean SVG WhatsApp Logo
  */
 export const WhatsAppIcon = ({ size = 20, className = '' }) => (
@@ -31,6 +45,10 @@ const WhatsAppButton = ({
   showIcon = true,
   iconSize = 20,
 }) => {
+  const resolvedMessage = productName
+    ? `Hello, I am interested in ${productName}. Please share the price and availability.`
+    : customMessage || CONTACT_INFO.defaultMessage;
+
   const url = productName
     ? getProductWhatsAppUrl(productName)
     : customMessage
@@ -41,9 +59,15 @@ const WhatsAppButton = ({
     ? `Enquire about ${productName} on WhatsApp`
     : 'Order on WhatsApp';
 
+  const handleClick = (e) => {
+    e.preventDefault();
+    openWhatsApp(resolvedMessage);
+  };
+
   return (
     <a
       href={url}
+      onClick={handleClick}
       target="_blank"
       rel="noopener noreferrer"
       aria-label={ariaLabel || defaultLabel}
@@ -56,4 +80,3 @@ const WhatsAppButton = ({
 };
 
 export default WhatsAppButton;
-

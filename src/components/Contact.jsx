@@ -2,6 +2,7 @@ import React from 'react';
 import { Phone, Mail, MessageSquare, Headphones } from 'lucide-react';
 import { CONTACT_INFO, getWhatsAppUrl } from '../data/contactInfo';
 import { WhatsAppIcon } from './WhatsAppButton';
+import ContactForm from './ContactForm';
 
 const Contact = () => {
   return (
@@ -51,18 +52,15 @@ const Contact = () => {
               Order, enquire about availability & ask questions instantly
             </p>
             <p className="contact-card-value">{CONTACT_INFO.phoneDisplay}</p>
-            <a
-              href={getWhatsAppUrl(
-                'Hello Mallikarjuna Traditional Millet Foods, I have a question about your millet foods.'
-              )}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-whatsapp-card-action"
-              aria-label="WhatsApp Us"
+            <WhatsAppButton
+              variant="card-action"
+              className="btn-whatsapp-card-action"
+              customMessage="Hello Mallikarjuna Traditional Millet Foods, I have a question about your millet foods."
+              ariaLabel="WhatsApp Us"
+              iconSize={18}
             >
-              <WhatsAppIcon size={18} />
-              <span>WhatsApp Us</span>
-            </a>
+              WhatsApp Us
+            </WhatsAppButton>
           </div>
 
           {/* Card 3: Email */}
@@ -84,6 +82,9 @@ const Contact = () => {
           </div>
         </div>
 
+        {/* Functional EmailJS Contact Form */}
+        <ContactForm />
+
         {/* Quick WhatsApp helper notice */}
         <div className="contact-notice">
           <MessageSquare size={18} className="notice-icon" />
@@ -98,4 +99,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
