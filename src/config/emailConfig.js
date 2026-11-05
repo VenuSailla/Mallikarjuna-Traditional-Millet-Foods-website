@@ -24,3 +24,4 @@ export const isEmailJSConfigured = () => {
 
   return !isPlaceholder(serviceId) && !isPlaceholder(templateId) && !isPlaceholder(publicKey);
 };
+
